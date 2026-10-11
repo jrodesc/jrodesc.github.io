@@ -48,6 +48,7 @@ const translations = {
   '#experience .experience-row:nth-child(2) .experience-location': 'Almería, España <span>/</span> Consultoría informática',
   '#experience .experience-row:nth-child(2) .experience-main>p:not(.experience-location)': 'Prestaba soporte a distintos equipos de la oficina y creaba scripts en Bash y Python para automatizar procesos.',
   '#projects .section-kicker': '02 <span>/</span> Trabajo destacado',
+  '#projects h2': 'Proyectos<span class="title-period">.</span>',
   '#projects .section-summary': 'Una selección de proyectos que he creado, de los que he aprendido y que sigo mejorando.',
   '#projects .project-card:nth-child(1) .project-info>p': 'Una web que simula una plataforma de comercio electrónico real. Creé desde cero una tienda funcional para un pequeño negocio dedicado al mundo geek, con Laravel, Angular 2, Bootstrap y MariaDB.',
   '#projects .project-card:nth-child(1) .project-link': 'Ver proyecto <span aria-hidden="true">↗</span>',
