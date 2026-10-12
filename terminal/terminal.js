@@ -12,7 +12,7 @@ let historyIndex = 0;
 const profile = {
   en: {
     welcome: 'Welcome to Jose Luis Rodríguez’s portfolio terminal.',
-    hint: "Type 'help' for commands. Use ↑/↓ for history, Tab to complete, Ctrl/Cmd+L to clear.",
+    hint: "Type 'help' for commands. Use up/down arrows for history, Tab to complete, Ctrl/Cmd+L to clear.",
     bar: 'PORTFOLIO TERMINAL', gui: 'GUI VERSION', foot: 'HTML / CSS / JAVASCRIPT', inspiration: 'Thanks to Noah Kim for the inspiration:',
     unknown: (command) => `Command not found: ${command}. Type 'help' to see available commands.`,
     helpTitle: 'AVAILABLE COMMANDS',
@@ -49,7 +49,7 @@ const profile = {
   },
   es: {
     welcome: 'Bienvenido al terminal del portfolio de Jose Luis Rodríguez.',
-    hint: "Escribe 'help' para ver los comandos. Usa ↑/↓ para el historial, Tab para autocompletar y Ctrl/Cmd+L para limpiar.",
+    hint: "Escribe 'help' para ver los comandos. Usa las flechas arriba/abajo para el historial, Tab para autocompletar y Ctrl/Cmd+L para limpiar.",
     bar: 'TERMINAL DEL PORTFOLIO', gui: 'VERSIÓN VISUAL', foot: 'HTML / CSS / JAVASCRIPT', inspiration: 'Gracias a Noah Kim por la inspiración:',
     unknown: (command) => `Comando no encontrado: ${command}. Escribe 'help' para ver los comandos.`,
     helpTitle: 'COMANDOS DISPONIBLES',
@@ -152,7 +152,7 @@ function showProjects() {
   heading(t.projectsTitle);
   t.projects.forEach(([name, year, description, tags, url, imageUrl]) => {
     const previewAlt = language === 'es' ? `Vista previa de ${name}` : `${name} project preview`;
-    add(`<span class="entry-title">${safe(name)}</span> <span class="entry-meta">/ ${safe(year)}</span><br><span class="entry-body">${safe(description)}</span><br><img class="project-preview" src="${safe(imageUrl)}" alt="${safe(previewAlt)}"><span class="entry-tags">${safe(tags)}</span><br>${link(url, language === 'es' ? 'Ver proyecto ↗' : 'View project ↗')}`, 'project-entry');
+    add(`<span class="entry-title">${safe(name)}</span> <span class="entry-meta">/ ${safe(year)}</span><br><span class="entry-body">${safe(description)}</span><br><img class="project-preview" src="${safe(imageUrl)}" alt="${safe(previewAlt)}"><span class="entry-tags">${safe(tags)}</span><br>${link(url, language === 'es' ? 'Ver proyecto' : 'View project')}`, 'project-entry');
   });
 }
 
