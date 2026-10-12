@@ -1264,3 +1264,43 @@ a:focus-visible {
   height: 17px;
   vertical-align: 0;
 }
+
+@media (min-width: 601px) and (max-width: 800px) {
+  html {
+    scroll-padding-top: 120px;
+  }
+
+  .site-header {
+    height: auto;
+    min-height: 76px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px 24px;
+  }
+
+  .site-header > .wordmark {
+    order: 0;
+  }
+
+  .site-header > .theme-toggle,
+  .site-header > .language-switch {
+    order: 1;
+  }
+
+  .site-header > .language-switch {
+    margin-left: 0;
+  }
+
+  .site-header > .primary-nav {
+    order: 2;
+    flex: 0 0 100%;
+    justify-content: center;
+    gap: clamp(18px, 4vw, 34px);
+    margin: 0;
+    padding-top: 9px;
+    border-top: 1px solid var(--line);
+  }
+}
