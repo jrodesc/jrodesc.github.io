@@ -47,6 +47,15 @@ const translations = {
   '#experience .experience-row:nth-child(2) .experience-main h3': 'Técnico informático <span class="at-sign">en</span> Altec',
   '#experience .experience-row:nth-child(2) .experience-location': 'Almería, España <span>/</span> Consultoría informática',
   '#experience .experience-row:nth-child(2) .experience-main>p:not(.experience-location)': 'Implementé operaciones CRUD y lógica de negocio en Java; diseñé consultas MySQL para gestionar y reportar datos; y conecté el front-end con el back-end mediante jQuery y AJAX para crear interfaces dinámicas y adaptables.',
+  '#experience .experience-row:nth-child(3) .experience-date': 'Septiembre 2023 — Enero 2024',
+  '#experience .experience-row:nth-child(3) .experience-main h3': 'Técnico informático <span class="at-sign">en</span> Agencia Digital de Andalucía',
+  '#experience .experience-row:nth-child(3) .experience-location': 'Andalucía, España <span>/</span> Soporte informático',
+  '#experience .experience-row:nth-child(3) .experience-main>p:not(.experience-location)': 'Presté soporte de help desk a usuarios, diagnostiqué incidencias de hardware, software y conectividad, reparé y mantuve equipos e instalé y configuré software en portátiles para dejarlos listos para el trabajo.',
+  '#experience .experience-row:nth-child(1) .tag-list span:nth-child(3)': 'API REST',
+  '#experience .experience-row:nth-child(3) .tag-list span:nth-child(1)': 'Soporte técnico',
+  '#experience .experience-row:nth-child(3) .tag-list span:nth-child(2)': 'Equipos',
+  '#experience .experience-row:nth-child(3) .tag-list span:nth-child(3)': 'Redes',
+  '#experience .experience-row:nth-child(3) .tag-list span:nth-child(4)': 'Configuración de software',
   '#projects .section-kicker': '02 <span>/</span> Trabajo destacado',
   '#projects h2': 'Proyectos<span class="title-period">.</span>',
   '#projects .section-summary': 'Una selección de proyectos que he creado, de los que he aprendido y que sigo mejorando.',
@@ -99,11 +108,11 @@ function setLanguage(language) {
     : 'Portfolio of Jose Luis Rodríguez, software engineer focused on thoughtful, reliable software.';
   const cvLink = document.querySelector('.cv-button');
   cvLink.href = isSpanish
-    ? 'resume/CV_JoseLuisRodriguezEscobar.pdf'
-    : 'resume/cv_jlre_en.pdf';
+    ? 'resume/cv_jose_luis_es%20%281%29.pdf'
+    : 'resume/cv_jose_luis_en%20%281%29.pdf';
   cvLink.download = isSpanish
-    ? 'CV_JoseLuisRodriguezEscobar.pdf'
-    : 'Jose-Luis-Rodriguez-CV.pdf';
+    ? 'cv_jose_luis_es.pdf'
+    : 'cv_jose_luis_en.pdf';
 
   for (const [selector, spanish] of Object.entries(translations)) {
     const element = document.querySelector(selector);

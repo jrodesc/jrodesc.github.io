@@ -28,8 +28,9 @@ const profile = {
     about: 'Jose Luis Rodríguez is a software engineer based in Almeria, Spain. He enjoys learning about systems and software, and works across the stack from data models to interface details.',
     experienceTitle: 'EXPERIENCE',
     jobs: [
-      ['Software Engineer', 'Acciosoft', 'December 2025 — March 2026', 'El Ejido, Spain / Software engineering', 'Builds and maintains client software, from landing pages to complete e-commerce sites.', 'TypeScript · React · Node.js'],
-      ['IT Technician', 'Altec', 'April 2025 — June 2025', 'Almeria, Spain / IT Consultant', 'Provided support to office teams and created Bash and Python scripts to automate processes.', 'Python · Bash · Docker'],
+      ['Software Engineer', 'Acciosoft', 'December 2025 — March 2026', 'El Ejido, Spain / Software engineering', 'Built and maintained websites for professional clients, from landing pages to full e-commerce sites, managing each project through its lifecycle. Also developed reusable Angular components for internal projects and connected front ends to company REST APIs through Laravel (PHP).', 'Angular · Laravel / PHP · REST APIs'],
+      ['IT Technician', 'Altec', 'April 2025 — June 2025', 'Almeria, Spain / IT consulting', 'Implemented Java CRUD operations and business logic, designed MySQL queries for data management and reporting, and connected front end and back end using jQuery and AJAX.', 'Java · MySQL · jQuery · AJAX'],
+      ['IT Technician', 'Andalusian Digital Agency', 'September 2023 — January 2024', 'Andalusia, Spain / IT support', 'Provided help desk support, diagnosed hardware, software, and network issues, repaired and maintained PCs, and installed and configured software on staff laptops.', 'Help desk · Hardware · Networking · Software setup'],
     ],
     projectsTitle: 'SELECTED PROJECTS',
     projects: [
@@ -65,8 +66,9 @@ const profile = {
     about: 'Jose Luis Rodríguez es ingeniero de software y vive en Almería, España. Le gusta aprender sobre sistemas y desarrollo, y trabaja en distintas capas, desde modelos de datos hasta interfaces.',
     experienceTitle: 'EXPERIENCIA',
     jobs: [
-      ['Ingeniero de software', 'Acciosoft', 'Diciembre 2025 — Marzo 2026', 'El Ejido, España / Ingeniería de software', 'Desarrolla y mantiene software para clientes, desde páginas de aterrizaje hasta tiendas en línea completas.', 'TypeScript · React · Node.js'],
-      ['Técnico informático', 'Altec', 'Abril 2025 — Junio 2025', 'Almería, España / Consultoría informática', 'Prestó soporte a los equipos de la oficina y creó scripts en Bash y Python para automatizar procesos.', 'Python · Bash · Docker'],
+      ['Ingeniero de software', 'Acciosoft', 'Diciembre 2025 — Marzo 2026', 'El Ejido, España / Ingeniería de software', 'Desarrollé y mantuve sitios web para clientes profesionales, desde páginas de aterrizaje hasta tiendas en línea completas, y gestioné el ciclo de vida de cada proyecto. También desarrollé componentes reutilizables con Angular para proyectos internos y conecté el front-end con las API REST de la empresa mediante Laravel (PHP).', 'Angular · Laravel / PHP · API REST'],
+      ['Técnico informático', 'Altec', 'Abril 2025 — Junio 2025', 'Almería, España / Consultoría informática', 'Implementé operaciones CRUD y lógica de negocio en Java, diseñé consultas MySQL para gestionar y reportar datos y conecté el front-end con el back-end mediante jQuery y AJAX.', 'Java · MySQL · jQuery · AJAX'],
+      ['Técnico informático', 'Agencia Digital de Andalucía', 'Septiembre 2023 — Enero 2024', 'Andalucía, España / Soporte informático', 'Presté soporte de help desk a usuarios, diagnostiqué incidencias de hardware, software y conectividad, reparé y mantuve equipos e instalé y configuré software en portátiles para dejarlos listos para el trabajo.', 'Help desk · Hardware · Redes · Configuración de software'],
     ],
     projectsTitle: 'PROYECTOS DESTACADOS',
     projects: [
@@ -177,8 +179,10 @@ function execute(raw) {
     case 'skills': showSkills(); break;
     case 'cv': {
       const spanish = language === 'es';
-      const filename = spanish ? 'CV_JoseLuisRodriguezEscobar.pdf' : 'Jose-Luis-Rodriguez-CV.pdf';
-      const path = spanish ? '../resume/CV_JoseLuisRodriguezEscobar.pdf' : '../resume/cv_jlre_en.pdf';
+      const filename = spanish ? 'cv_jose_luis_es.pdf' : 'cv_jose_luis_en.pdf';
+      const path = spanish
+        ? '../resume/cv_jose_luis_es%20%281%29.pdf'
+        : '../resume/cv_jose_luis_en%20%281%29.pdf';
       add(link(path, t.cv, filename));
       break;
     }
